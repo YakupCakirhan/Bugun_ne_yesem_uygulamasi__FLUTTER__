@@ -1,4 +1,4 @@
-// ignore_for_file: camel_case_types
+// ignore_for_file: camel_case_types, unused_import, avoid_unnecessary_containers, sized_box_for_whitespace
 
 import 'dart:ffi';
 
@@ -64,6 +64,8 @@ class _yemekSayfasiState extends State<yemekSayfasi> {
     'Dondurma'
   ];
 
+  
+
   void yemekleriYenile() {
     setState(() {
       corbaNo = Random().nextInt(5) + 1;
@@ -78,6 +80,7 @@ class _yemekSayfasiState extends State<yemekSayfasi> {
       child: Column(
         children: [
           Expanded(
+            // ignore: deprecated_member_use
             child: FlatButton(
               color: Colors.white10,
               highlightColor: Colors.white,
@@ -94,16 +97,22 @@ class _yemekSayfasiState extends State<yemekSayfasi> {
               fontSize: 20.0,
             ),
           ),
-          Container(
-            width: 200,
-            child: const Divider(
-              height: 3,
-              color: Colors.black87,
+          
+            
+            
+            
+                Container(
+                 width: 200,
+                 child: const Divider(
+                  height: 3,
+                  color: Colors.black87,
             ),
-          ),
+             ),
+          
           Expanded(
             child: Padding(
               padding: const EdgeInsets.all(12.0),
+              // ignore: deprecated_member_use
               child: FlatButton(
                 splashColor: Colors.white,
                 highlightColor: Colors.white,
@@ -120,7 +129,7 @@ class _yemekSayfasiState extends State<yemekSayfasi> {
               fontSize: 20.0,
             ),
           ),
-          Container(
+            Container(
             width: 200,
             child: const Divider(
               height: 3,
@@ -130,6 +139,7 @@ class _yemekSayfasiState extends State<yemekSayfasi> {
           Expanded(
             child: Padding(
               padding: const EdgeInsets.all(12.0),
+              // ignore: deprecated_member_use
               child: FlatButton(
                 color: Colors.white10,
                 highlightColor: Colors.white,
